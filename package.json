@@ -28,10 +28,8 @@
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-babel": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-flowtype": "*",
-    "eslint-plugin-jest": "*"
-  },
+
+},
   "dependencies": {},
   "repository": {
     "type": "git",
