@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "presets": ["env","stage-0"]
 }
+=======
+   "presets": ["env", "stage-0"]
+}
+>>>>>>> 1e34277c93bde34ae6395abbf836a10c9867c1bb
