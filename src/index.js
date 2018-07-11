@@ -7,12 +7,12 @@ export default () => {
   console.log(`Hello, ${name}!\n`);
   const gameRound = 3;
   for (let i = 0; i < gameRound; i += 1) {
-    const number = Math.floor(Math.random() * 100);
-    console.log(`Question: ${number}`);
+    const question = Math.floor(Math.random() * 100);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    const normalAnswer = number % 2 === 0 ? 'yes' : 'no';
-    if (answer !== normalAnswer) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${normalAnswer}'.`);
+    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+    if (answer !== correctAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
