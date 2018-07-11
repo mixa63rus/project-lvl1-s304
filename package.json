@@ -1,9 +1,10 @@
 {
   "name": "newbymikhail",
-  "version": "1.0.2",
-  "main": "index.js",
+  "version": "1.2.0",
+  "main": "src/index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -18,18 +19,18 @@
   "author": "Mikhail Popov",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "cross-env": "^5.2.0",
-    "readline-sync": "^1.4.9",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-babel": "^5.0.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-flowtype": "^2.46.1",
-    "eslint-plugin-jest": "^21.15.0"
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "cross-env": "*",
+    "readline-sync": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-babel": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-flowtype": "*",
+    "eslint-plugin-jest": "*"
   },
   "dependencies": {},
   "repository": {
