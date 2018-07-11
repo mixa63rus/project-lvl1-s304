@@ -26,7 +26,8 @@
     "cross-env": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
-    "eslint-plugin-import": "*"
+    "eslint-plugin-import": "*",
+    "babel-eslint": "*"
 },
   "dependencies": {
       "readline-sync": "*"
