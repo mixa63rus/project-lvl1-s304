@@ -10,7 +10,7 @@ export default () => {
     const question = Math.floor(Math.random() * 100);
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+    const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
     if (answer !== correctAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
