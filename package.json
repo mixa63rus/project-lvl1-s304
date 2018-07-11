@@ -1,7 +1,7 @@
 {
   "name": "newbymikhail",
-  "version": "1.0.1",
-  "main": "",
+  "version": "1.0.2",
+  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -27,7 +27,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mixa63rus/project-lvl1-s304"
+    "url": "git+https://github.com/mixa63rus/project-lvl1-s304.git"
   },
   "bugs": {
     "url": "https://github.com/mixa63rus/project-lvl1-s304/issues"
