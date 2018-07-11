@@ -24,13 +24,13 @@
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
     "cross-env": "*",
-    "readline-sync": "*",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
-    "eslint-plugin-babel": "*",
-
+    "eslint-plugin-import": "*"
 },
-  "dependencies": {},
+  "dependencies": {
+      "readline-sync": "*"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mixa63rus/project-lvl1-s304.git"
