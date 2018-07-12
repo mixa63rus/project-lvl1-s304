@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
 import game from '../game';
+import getRandomNumber from '../utils';
 
-const getRandomNumber = max => Math.floor(Math.random() * max);
+const descriptionGame = 'What is the result of the expression?\n';
 
 const getGcd = (a, b) => {
   if (b === 1) {
@@ -14,7 +15,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const questionPair = () => {
+const getPair = () => {
   const firstNumber = getRandomNumber(40);
   const secondNumber = getRandomNumber(10);
   const question = `${firstNumber} ${secondNumber}`;
@@ -23,6 +24,5 @@ const questionPair = () => {
 };
 
 export default () => {
-  const condition = 'What is the result of the expression?\n';
-  return game(cons(condition, () => questionPair()));
+  return game(cons(descriptionGame, getPair()));
 };
