@@ -37,7 +37,7 @@ export const getQuestion = (gameName) => {
           switch (operation) {
             case '+':
               return cons(question, firstNumber + secondNumber);
-            case '-':
+            case '-':   
               return cons(question, firstNumber - secondNumber);
             default:
               return cons(question, firstNumber * secondNumber);
