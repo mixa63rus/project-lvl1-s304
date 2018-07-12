@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { cons } from 'hexlet-pairs';
 
 const getRandomNumber = max => Math.floor(Math.random() * max);
@@ -35,21 +34,21 @@ export const getQuestion = (gameName) => {
       let operation;
       switch (operationNumber) {
         case '0':
-          operation = '+';
+          return operation = '+';
         case '1':
-          operation = '-';
-        case '2':
-          operation = '*';  
-      const question = `${firstNumber} ${operation} ${secondNumber}`;
-      switch (operation) {
-        case '+':
-          return cons(question, firstNumber + secondNumber);
-        case '-':
-          return cons(question, firstNumber - secondNumber);
+          return operation = '-';
         default:
-          return cons(question, firstNumber * secondNumber);
+          return operation = '*';  
+      const question = `${firstNumber} ${operation} ${secondNumber}`;
+          switch (operation) {
+            case '+':
+              return cons(question, firstNumber + secondNumber);
+            case '-':
+              return cons(question, firstNumber - secondNumber);
+            default:
+              return cons(question, firstNumber * secondNumber);
+            }
         }
-      }
     }
   }
 };
