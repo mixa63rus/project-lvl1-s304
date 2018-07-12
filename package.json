@@ -29,11 +29,11 @@
     "eslint-config-airbnb-base": "*",
     "eslint-plugin-import": "*",
     "babel-eslint": "*"
-},
+  },
   "dependencies": {
-      "readline-sync": "*",
-      "hexlet-pairs": "*"
-},
+    "hexlet-pairs": "*",
+    "readline-sync": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mixa63rus/project-lvl1-s304.git"
