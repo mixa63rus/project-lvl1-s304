@@ -20,6 +20,4 @@ const getPair = () => {
   }
 };
 
-export default () => {
-  return game(cons(descriptionGame, getPair()));
-};
+export default () => game(cons(descriptionGame, getPair()));
