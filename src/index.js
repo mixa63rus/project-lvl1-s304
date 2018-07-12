@@ -28,20 +28,19 @@ export const getQuestion = (gameName) => {
       return cons(question, correctAnswer);
     }
     default: {
-      const firstNumber = getRandomNumber(100);
-      const secondNumber = getRandomNumber(100);
-      const operationNumber = getRandomNumber(3);
+      const firstNumber = getRandomNumber(40);
+      const secondNumber = getRandomNumber(10);
       const operations = ['+', '-', '*'];
-      const operation = operations[getRandom(3)];  
+      const operation = operations[getRandomNumber(3)];
       const question = `${firstNumber} ${operation} ${secondNumber}`;
-          switch (operation) {
-            case '+':
-              return cons(question, firstNumber + secondNumber);
-            case '-':   
-              return cons(question, firstNumber - secondNumber);
-            default:
-              return cons(question, firstNumber * secondNumber);
-            }
-        }
+      switch (operation) {
+        case '+':
+          return cons(question, firstNumber + secondNumber);
+        case '-':
+          return cons(question, firstNumber - secondNumber);
+        default:
+          return cons(question, firstNumber * secondNumber);
+      }
     }
-  };
+  }
+};
