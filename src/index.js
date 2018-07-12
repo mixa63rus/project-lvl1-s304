@@ -31,14 +31,8 @@ export const getQuestion = (gameName) => {
       const firstNumber = getRandomNumber(100);
       const secondNumber = getRandomNumber(100);
       const operationNumber = getRandomNumber(3);
-      let operation;
-      switch (operationNumber) {
-        case '0':
-          return operation = '+';
-        case '1':
-          return operation = '-';
-        default:
-          return operation = '*';  
+      const operations = ['+', '-', '*'];
+      const operation = operations[getRandom(3)];  
       const question = `${firstNumber} ${operation} ${secondNumber}`;
           switch (operation) {
             case '+':
@@ -50,5 +44,4 @@ export const getQuestion = (gameName) => {
             }
         }
     }
-  }
-};
+  };
