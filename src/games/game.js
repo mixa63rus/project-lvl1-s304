@@ -10,7 +10,7 @@ export const welcome = (gameName) => {
   return name;
 };
 
-export const iter = (gameName, gameRound) =>     {
+export const iter = (gameName, gameRound) => {
   if (gameRound === 0) {
     return true;
   }

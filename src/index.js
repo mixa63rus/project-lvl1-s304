@@ -48,6 +48,7 @@ export const getQuestion = (gameName) => {
           return cons(question, firstNumber - secondNumber);
         default:
           return cons(question, firstNumber * secondNumber);
+        }
       }
     }
   }
