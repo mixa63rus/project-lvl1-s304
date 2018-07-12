@@ -1,8 +1,16 @@
-import { welcome, iter, exit } from './game';
+import { cons } from 'hexlet-pairs';
+import game from '../game';
+
+const getRandomNumber = max => Math.floor(Math.random() * max);
+
+const isEven = number => number % 2 === 0;
+
+const questionPair = () => {
+  const question = getRandomNumber(100);
+  return cons(question, isEven(question) ? 'yes' : 'no');
+};
 
 export default () => {
-  const gameName = 'even';
-  const name = welcome(gameName);
-  const isWin = iter(gameName, 3);
-  exit(isWin, name);
+  const condition = 'Answer "yes" if number even otherwise answer "no".\n';
+  return game(cons(condition, () => questionPair()));
 };
