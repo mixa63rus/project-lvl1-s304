@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+const gameRound = 3;
 export default () => {
   console.log('Welcome to the Brain Games!');
   console.log('Answer "yes" if number even otherwise answer "no".\n');
@@ -11,7 +12,6 @@ export default () => {
     }
     return 'no';
   };
-  const gameRound = 3;
   for (let i = 0; i < gameRound; i += 1) {
     const question = Math.floor(Math.random() * 100);
     console.log(`Question: ${question}`);
