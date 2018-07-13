@@ -11,7 +11,7 @@ const getPair = () => {
   const operation = operations[getRandomNumber(3)];
   const question = `Question: ${firstNumber} ${operation} ${secondNumber}`;
   switch (operation) {
-    case '+':{
+    case '+': {
       const answer = firstNumber + secondNumber;
       return cons(question, `${answer}`);
     }
@@ -20,8 +20,8 @@ const getPair = () => {
       return cons(question, answer);
     }
     default: {
-    const answer = firstNumber * secondNumber;
-    return cons(question, answer);
+      const answer = firstNumber * secondNumber;
+      return cons(question, answer);
     }
   }
 };

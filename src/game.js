@@ -4,7 +4,7 @@ import { car, cdr } from 'hexlet-pairs';
 const roundCount = 3;
 
 const iter = (pair, count) => {
-  if (count === 0 ) {
+  if (count === 0) {
     return true;
   }
   const questionAndAnswer = pair();
