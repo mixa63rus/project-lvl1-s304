@@ -8,10 +8,10 @@ const max = 100;
 const isEven = number => number % 2 === 0;
 const correctAnswer = number => (isEven(number) ? 'yes' : 'no');
 
-const getPair = () => {
+const questionAndAnswer = () => {
   const number = getRandomNumber(max, min);
   const question = number;
   return cons(question, correctAnswer(number));
 };
 
-export default () => game(cons(descriptionGame, getPair));
+export default () => game(descriptionGame, questionAndAnswer);

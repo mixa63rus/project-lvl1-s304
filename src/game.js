@@ -11,7 +11,7 @@ const iter = (questionAndAnswer, count) => {
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = cdr(questionAndAnswer);
-  if (answer !== `${correctAnswer}`) {
+  if (answer !== correctAnswer) {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     return false;
   }
