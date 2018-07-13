@@ -16,7 +16,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const getPair = () => {
+const questionAndAnswer = () => {
   const firstNumber = getRandomNumber(max, min);
   const secondNumber = getRandomNumber(max, min);
   const question = `${firstNumber} ${secondNumber}`;
@@ -24,4 +24,4 @@ const getPair = () => {
   return cons(question, `${answer}`);
 };
 
-export default () => game(cons(descriptionGame, getPair));
+export default () => game(descriptionGame, questionAndAnswer);
