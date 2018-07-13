@@ -22,4 +22,4 @@ const getPair = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => game(cons(descriptionGame, getPair()));
+export default () => game(cons(descriptionGame, getPair));
