@@ -4,12 +4,12 @@ import { car, cdr } from 'hexlet-pairs';
 const roundCount = 3;
 
 const iter = (pair, count) => {
-  if (count === 1) {
+  if (count === 0 ) {
     return true;
   }
   const questionAndAnswer = pair();
   const question = car(questionAndAnswer);
-  console.log(question);
+  console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = cdr(questionAndAnswer);
   if (answer !== `${correctAnswer}`) {
@@ -24,8 +24,10 @@ export default (game) => {
   console.log('Welcome to the Brain Games!');
   const description = car(game);
   console.log(description);
+  console.log();
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
+  console.log(`Hello, ${name}!`);
+  console.log();
   const questionAndAnswer = cdr(game);
   const isWin = iter(questionAndAnswer, roundCount);
   if (!isWin) {

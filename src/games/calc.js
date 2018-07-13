@@ -11,12 +11,18 @@ const getPair = () => {
   const operation = operations[getRandomNumber(3)];
   const question = `Question: ${firstNumber} ${operation} ${secondNumber}`;
   switch (operation) {
-    case '+':
-      return cons(question, firstNumber + secondNumber);
-    case '-':
-      return cons(question, firstNumber - secondNumber);
-    default:
-      return cons(question, firstNumber * secondNumber);
+    case '+':{
+      const answer = firstNumber + secondNumber;
+      return cons(question, `${answer}`);
+    }
+    case '-': {
+      const answer = firstNumber - secondNumber;
+      return cons(question, answer);
+    }
+    default: {
+    const answer = firstNumber * secondNumber;
+    return cons(question, answer);
+    }
   }
 };
 

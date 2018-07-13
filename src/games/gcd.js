@@ -18,8 +18,8 @@ const getPair = () => {
   const firstNumber = getRandomNumber(40);
   const secondNumber = getRandomNumber(10);
   const question = `${firstNumber} ${secondNumber}`;
-  const correctAnswer = getGcd(firstNumber, secondNumber);
-  return cons(question, correctAnswer);
+  const answer = getGcd(firstNumber, secondNumber);
+  return cons(question, `${answer}`);
 };
 
 export default () => game(cons(descriptionGame, getPair));
