@@ -8,8 +8,7 @@ const getGcd = (a, b) => {
   if (b === 1) {
     return b;
   }
-  const isGcd = a % b === 0;
-  if (isGcd) {
+  if (a % b === 0) {
     return b;
   }
   return getGcd(b, a % b);
@@ -23,4 +22,4 @@ const getPair = () => {
   return cons(question, correctAnswer);
 };
 
-export default () => game(cons(descriptionGame, getPair()));
+export default () => game(descriptionGame, getPair());

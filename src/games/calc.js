@@ -4,10 +4,10 @@ import getRandomNumber from '../utils';
 
 const descriptionGame = 'Find the greatest common divisor of given numbers.\n';
 const operations = ['+', '-', '*'];
+const firstNumber = getRandomNumber(40);
+const secondNumber = getRandomNumber(10);
 
 const getPair = () => {
-  const firstNumber = getRandomNumber(40);
-  const secondNumber = getRandomNumber(10);
   const operation = operations[getRandomNumber(3)];
   const question = `Question: ${firstNumber} ${operation} ${secondNumber}`;
   switch (operation) {
@@ -20,4 +20,4 @@ const getPair = () => {
   }
 };
 
-export default () => game(cons(descriptionGame, getPair()));
+export default () => game(descriptionGame, getPair());
