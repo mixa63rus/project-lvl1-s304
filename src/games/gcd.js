@@ -3,6 +3,8 @@ import game from '../game';
 import getRandomNumber from '../utils';
 
 const descriptionGame = 'What is the result of the expression?';
+const min = 1;
+const max = 100;
 
 const getGcd = (a, b) => {
   if (b === 1) {
@@ -15,8 +17,8 @@ const getGcd = (a, b) => {
 };
 
 const getPair = () => {
-  const firstNumber = getRandomNumber(40);
-  const secondNumber = getRandomNumber(10);
+  const firstNumber = getRandomNumber(max, min);
+  const secondNumber = getRandomNumber(max, min);
   const question = `${firstNumber} ${secondNumber}`;
   const answer = getGcd(firstNumber, secondNumber);
   return cons(question, `${answer}`);

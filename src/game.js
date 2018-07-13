@@ -3,11 +3,10 @@ import { car, cdr } from 'hexlet-pairs';
 
 const roundCount = 3;
 
-const iter = (pair, count) => {
+const iter = (questionAndAnswer, count) => {
   if (count === 0) {
     return true;
   }
-  const questionAndAnswer = pair();
   const question = car(questionAndAnswer);
   console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
@@ -17,18 +16,16 @@ const iter = (pair, count) => {
     return false;
   }
   console.log('Correct!');
-  return iter(pair, count - 1);
+  return iter(questionAndAnswer, count - 1);
 };
 
-export default (game) => {
+export default (descriptionGame, questionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
-  const description = car(game);
-  console.log(description);
+  console.log(descriptionGame);
   console.log();
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log();
-  const questionAndAnswer = cdr(game);
   const isWin = iter(questionAndAnswer, roundCount);
   if (!isWin) {
     console.log(`Let's try again, ${name}!`);

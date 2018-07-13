@@ -1,6 +1,6 @@
 {
   "name": "newbymikhail",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "main": "src/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -23,13 +23,13 @@
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
+    "babel-eslint": "*",
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
-    "cross-env": "*",
+    "cross-env": "^5.2.0",
     "eslint": "*",
     "eslint-config-airbnb-base": "*",
-    "eslint-plugin-import": "*",
-    "babel-eslint": "*"
+    "eslint-plugin-import": "*"
   },
   "dependencies": {
     "hexlet-pairs": "*",
