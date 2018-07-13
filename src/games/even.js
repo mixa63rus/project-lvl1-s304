@@ -1,16 +1,15 @@
 import { cons } from 'hexlet-pairs';
 import game from '../game';
+import getRandomNumber from '../utils';
 
-const getRandomNumber = max => Math.floor(Math.random() * max);
-
+const descriptionGame = 'Answer "yes" if number even otherwise answer "no".\n';
 const isEven = number => number % 2 === 0;
+const correctAnswer = (number) => (isEven(number) ? 'yes' : 'no');
 
-const questionPair = () => {
-  const question = getRandomNumber(100);
-  return cons(question, isEven(question) ? 'yes' : 'no');
+const getPair = () => {
+  const number = getRandomNumber(100);
+  const question = `Question: ${number}`;
+  return cons(question, correctAnswer(question));
 };
 
-export default () => {
-  const condition = 'Answer "yes" if number even otherwise answer "no".\n';
-  return game(cons(condition, () => questionPair()));
-};
+export default () => game(cons(descriptionGame, getPair()));

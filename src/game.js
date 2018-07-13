@@ -2,6 +2,9 @@ import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
 const iter = (game, count) => {
+  if (count === 1) {
+    return true;
+  }
   const questionPair = cdr(game)();
   console.log(`Question: ${car(questionPair)}`);
   const answer = readlineSync.question('Your answer: ');
@@ -12,9 +15,6 @@ const iter = (game, count) => {
     return false;
   }
   console.log('Correct!');
-  if (count === 1) {
-    return true;
-  }
   return iter(game, count - 1);
 };
 
