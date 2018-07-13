@@ -14,10 +14,10 @@ const iter = (acc, sum, count) => {
 };
 
 const getBalance = (number) => {
-  const array = `${number}`.split('');
-  const length = array.length;
-  const sum = array.reduce((acc, value) => acc + Number(value), 0);
-  return iter('', sum, length);
+  const arrayOfDigits = `${number}`.split('');
+  const countDigits = arrayOfDigits.length;
+  const sum = arrayOfDigits.reduce((acc, value) => acc + Number(value), 0);
+  return iter('', sum, countDigits);
 };
 
 const questionAndAnswer = () => {
