@@ -9,7 +9,7 @@ const isEven = number => number % 2 === 0;
 const correctAnswer = number => (isEven(number) ? 'yes' : 'no');
 
 const getPair = () => {
-  const number = getRandomNumber(max, min)
+  const number = getRandomNumber(max, min);
   const question = number;
   return cons(question, correctAnswer(number));
 };
