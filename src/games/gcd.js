@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import game from '../game';
 import getRandomNumber from '../utils';
 
-const descriptionGame = 'What is the result of the expression?\n';
+const descriptionGame = 'What is the result of the expression?';
 
 const getGcd = (a, b) => {
   if (b === 1) {
