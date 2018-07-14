@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 import { cons } from 'hexlet-pairs';
 import game from '../game';
 import getRandomNumber from '../utils';
