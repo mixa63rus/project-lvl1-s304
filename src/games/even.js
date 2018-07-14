@@ -10,7 +10,7 @@ const correctAnswer = number => (isEven(number) ? 'yes' : 'no');
 
 const questionAndAnswer = () => {
   const number = getRandomNumber(max, min);
-  const question = number;
+  const question = `Question: ${number}`;
   return cons(question, correctAnswer(number));
 };
 

@@ -13,7 +13,7 @@ const getProgression = () => {
   const step = getRandomNumber(maxStep, minStep);
   const progression = [firstElement];
   while (progression.length <= progressionLength) {
-    progression.push(firstElement + (step * progressionLength));
+    progression.push(firstElement + (step * progression.length));
   }
   return progression;
 };

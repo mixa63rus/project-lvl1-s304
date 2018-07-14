@@ -19,7 +19,7 @@ const getGcd = (a, b) => {
 const questionAndAnswer = () => {
   const firstNumber = getRandomNumber(max, min);
   const secondNumber = getRandomNumber(max, min);
-  const question = `${firstNumber} ${secondNumber}`;
+  const question = `Question: ${firstNumber} ${secondNumber}`;
   const answer = getGcd(firstNumber, secondNumber);
   return cons(question, `${answer}`);
 };

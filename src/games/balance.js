@@ -41,7 +41,7 @@ const getBalance = (number) => {
 
 const questionAndAnswer = () => {
   const number = getRandomNumber(max);
-  const question = `${number}`;
+  const question = `Question: ${number}`;
   const answer = getBalance(number);
   return cons(question, `${answer}`);
 };

@@ -11,7 +11,7 @@ const questionAndAnswer = () => {
   const firstNumber = getRandomNumber(maxFirstNumber);
   const secondNumber = getRandomNumber(maxsecondNumber);
   const operation = operations[getRandomNumber(operations.length)];
-  const question = `${firstNumber} ${operation} ${secondNumber}`;
+  const question = `Question: ${firstNumber} ${operation} ${secondNumber}`;
   switch (operation) {
     case '+': {
       const answer = firstNumber + secondNumber;

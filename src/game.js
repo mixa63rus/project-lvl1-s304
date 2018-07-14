@@ -9,7 +9,7 @@ const iter = (questionAndAnswer, count) => {
   }
   const pair = questionAndAnswer();
   const question = car(pair);
-  console.log(`Question: ${question}`);
+  console.log(`${question}`);
   const answer = readlineSync.question('Your answer: ');
   const correctAnswer = cdr(pair);
   if (answer !== correctAnswer) {
