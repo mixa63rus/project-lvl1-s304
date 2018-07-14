@@ -30,6 +30,5 @@ const questionAndAnswer = () => {
   const answer = isPrime(number) ? 'yes' : 'no';
   return cons(question, `${answer}`);
 };
-  
-  export default () => game(descriptionGame, questionAndAnswer);
-  
+
+export default () => game(descriptionGame, questionAndAnswer);
