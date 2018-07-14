@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
@@ -28,9 +29,9 @@ export default (descriptionGame, questionAndAnswer) => {
   console.log(`Hello, ${name}!`);
   console.log();
   const isWin = iter(questionAndAnswer, roundCount);
-  if (!isWin) {
-    console.log(`Let's try again, ${name}!`);
-  } else {
+  if (isWin) {
     console.log(`Congratulations, ${name}!`);
+  } else {
+    console.log(`Let's try again, ${name}!`);
   }
 };
